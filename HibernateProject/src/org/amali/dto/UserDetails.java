@@ -1,14 +1,16 @@
 package org.amali.dto;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.print.DocFlavor.STRING;
 
-@Entity
+@Entity (name = "USER_DETAILS")
 public class UserDetails {
 	
 	@Id
 	private int userId;
+	@Column (name="USER_NAME")
 	private String userName;
 	
 	public int getUserId() {
