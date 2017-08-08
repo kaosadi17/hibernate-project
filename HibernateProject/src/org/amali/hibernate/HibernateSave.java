@@ -12,6 +12,8 @@ public class HibernateSave {
 		UserDetails user = new UserDetails();
 		user.setUserId(1);
 		user.setUserName("Amali");
+		user.setUserId(2);
+		user.setUserName("Osadi");
 		
 		SessionFactory sessionFac = new Configuration().configure().buildSessionFactory();
 		Session session =  sessionFac.openSession();
